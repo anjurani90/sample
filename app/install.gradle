@@ -1,0 +1,40 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.fourtek.library' // CREATE A GROUP ID FOR YOUR LIBRARY
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.fourtek.library' // CREATE A GROUP ID FOR YOUR LIBRARY
+                artifactId 'sample' // THE NAME OF YOUR MODULE
+
+                name 'sample' // YOUR LIBRARY NAME
+                description 'A Sample demo for testing gradle dependency' // YOUR LIBRARY DESCRIPTION
+                url 'https://github.com/anjurani90/sample' // YOUR SITE
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'anjurani90' //YOUR ID
+                        name 'Anju Rani' //YOUR NAME
+                        email 'anju@fourtek.com' //YOUR EMAIL
+                    }
+                }
+                scm {
+                    connection 'https://github.com/anjurani90/sample.git' // YOUR GIT REPO
+
+                    developerConnection 'https://github.com/anjurani90/sample.git' // YOUR GIT REPO
+                    url 'https://github.com/anjurani90/sample' // YOUR SITE
+
+                }
+            }
+        }
+    }
+}
