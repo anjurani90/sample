@@ -45,12 +45,11 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 
 // https://github.com/bintray/gradle-bintray-plugin
 bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-
+    user = properties.getProperty("user")
+    key = properties.getProperty("apikey")
     configurations = ['archives']
     pkg {
-        repo = 'anjurani.maven'
+        repo = 'maven'
         // it is the name that appears in bintray when logged
         name = 'sample' // TODO
         websiteUrl = 'https://github.com/anjurani90/sample' // YOUR SITE
@@ -64,4 +63,5 @@ bintray {
             }
         }
     }
+
 }
