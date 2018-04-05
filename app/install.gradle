@@ -22,9 +22,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'anjurani90' //YOUR ID
-                        name 'Anju Rani' //YOUR NAME
-                        email 'anju@fourtek.com' //YOUR EMAIL
+                        id 'dhruvgupta' //YOUR ID
+                        name 'Dhruv Gupta' //YOUR NAME
+                        email 'dhruv@fourtek.com' //YOUR EMAIL
                     }
                 }
                 scm {
